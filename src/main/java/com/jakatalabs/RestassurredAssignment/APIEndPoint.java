@@ -6,5 +6,6 @@ public final class APIEndPoint {
 	public final static String dashboardAPI = "/build_cards";
 	public final static String SignUpAPI = "/users";
 	public final static String profileAPI = "/user";
+	public final static String logOutAPI = "/users/sign_out";
 
 }

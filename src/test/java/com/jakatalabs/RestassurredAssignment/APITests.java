@@ -47,4 +47,20 @@ public class APITests extends BaseAPITest {
 		String verifyEmail = getDataFromResponseUsingJsonPath(responseProfileAPI, "email");
 		AssertJUnit.assertEquals(verifyEmail, Email);
 	}
+
+	@Test(priority = 3)
+	public void logOutAPI() {
+
+		Response responseLogOutAPI = given().spec(commonSpec).param("authtoken", authToken).when()
+				.delete(APIEndPoint.logOutAPI);
+
+		System.out.println(authToken);
+
+		verifyAPIStatusTimeAndHeader(responseLogOutAPI, 200);
+
+		String verifyResponseMessage = getDataFromResponseUsingJsonPath(responseLogOutAPI, "message");
+		AssertJUnit.assertEquals(verifyResponseMessage, verifyResponseMessage);
+
+	}
+
 }

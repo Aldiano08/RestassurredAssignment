@@ -5,7 +5,7 @@
     <classes>
       <class name="com.jakatalabs.RestassurredAssignment.APITests">
         <methods>
-          <include name="profileAPI"/>
+          <include name="logOutAPI"/>
         </methods>
       </class> <!-- com.jakatalabs.RestassurredAssignment.APITests -->
     </classes>
